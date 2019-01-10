@@ -23,6 +23,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
   <!-- Custom Styles theme -->
   <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+  div#serverCollapse {
+      /*height: 340px;*/
+      max-height: 340px;
+      min-height: 340px;
+  }
+  </style>
 </head>
 
 <body>
@@ -78,8 +85,9 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <span id="connectionStatus">Connection - Disconnected.</span>
+            <a class="chevron-toggle" data-toggle="collapse" data-target="#serverCollapse" href="#collapseOne"> </a>
           </div>
-          <div class="panel-body" id="serverCollapse">
+          <div class="panel-body collapse in fixed-height-panel" id="serverCollapse">
             <form>
               <div class="row">
 
